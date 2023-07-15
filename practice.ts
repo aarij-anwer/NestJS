@@ -28,7 +28,7 @@ console.log(guess);
 
 // Variable type annotations or declarations
 
-let phoneNumber : string;
+let phoneNumber: string;
 
 if (Math.random() > 0.5) {
   phoneNumber = '+61770102062';
@@ -36,3 +36,5 @@ if (Math.random() > 0.5) {
   // phoneNumber = 7167762323; //error
   phoneNumber = '7167762323';
 }
+
+export {}
