@@ -25,3 +25,14 @@ guess = "green";
 console.log(guess);
 guess = 1;
 console.log(guess);
+
+// Variable type annotations or declarations
+
+let phoneNumber : string;
+
+if (Math.random() > 0.5) {
+  phoneNumber = '+61770102062';
+} else {
+  // phoneNumber = 7167762323; //error
+  phoneNumber = '7167762323';
+}
