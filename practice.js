@@ -35,3 +35,9 @@ function greetTripled(greeting, value) {
     console.log("".concat(greeting, ", ").concat(triple(value), "!"));
 }
 greetTripled('Hiya', 5);
+function proclaim(status) {
+    console.log("I'm ".concat(status || 'not ready...'));
+}
+proclaim();
+proclaim('ready?');
+proclaim('ready!');
