@@ -58,4 +58,16 @@ proclaim('ready?');
 proclaim('ready!');
 
 
+// default parameters
+
+function proclaim(status?: string, repeat?: number) {
+  for (let i = 0; i < repeat || 0; i += 1) {
+    console.log(`I'm ${status || 'not ready...'}`);
+  }
+}
+
+proclaim();
+proclaim('ready?');
+proclaim('ready!', 3);
+
 export {}
