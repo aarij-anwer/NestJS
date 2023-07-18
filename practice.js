@@ -35,9 +35,20 @@ function greetTripled(greeting, value) {
     console.log("".concat(greeting, ", ").concat(triple(value), "!"));
 }
 greetTripled('Hiya', 5);
-function proclaim(status) {
-    console.log("I'm ".concat(status || 'not ready...'));
+// function proclaim(status?: string) {
+//   console.log(`I'm ${status || 'not ready...'}`);
+// }
+// proclaim();
+// proclaim('ready?');
+// proclaim('ready!');
+// default parameters
+function proclaim(status, repeat) {
+    if (status === void 0) { status = "not ready..."; }
+    if (repeat === void 0) { repeat = 1; }
+    for (var i = 0; i < repeat; i += 1) {
+        console.log("I'm ".concat(status));
+    }
 }
 proclaim();
 proclaim('ready?');
-proclaim('ready!');
+proclaim('ready!', 3);
