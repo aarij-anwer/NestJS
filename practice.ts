@@ -72,6 +72,11 @@ proclaim('ready!', 3);
 
 
 //inferring return types
+function getRandomNumber(){
+  return Math.random();
+}
+
+const myVar = getRandomNumber();
 
 
 export {}
