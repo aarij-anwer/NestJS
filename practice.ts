@@ -70,4 +70,8 @@ proclaim();
 proclaim('ready?');
 proclaim('ready!', 3);
 
+
+//inferring return types
+
+
 export {}
