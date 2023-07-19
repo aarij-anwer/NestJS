@@ -60,6 +60,12 @@ greetTripled('Hiya', 5);
 
 // default parameters
 
+/**
+ * Prints a status starting with "I'm " and ending with `status`, repeating it the number of times specified by `repeat`.
+ * @param status - the status after "I'm ", by default it is "not ready"
+ * @param repeat - the number of times to print, ny default 1
+ * @returns N/A
+ */
 function proclaim(status = "not ready...", repeat = 1) {
   for (let i = 0; i < repeat; i += 1) {
     console.log(`I'm ${status}`);
