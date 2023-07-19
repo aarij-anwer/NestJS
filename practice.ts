@@ -79,4 +79,11 @@ function getRandomNumber() : number{
 const myVar = getRandomNumber();
 console.log(myVar);
 
+// void return type
+function printRandomNumber() : void{
+  console.log(Math.random());
+}
+
+printRandomNumber();
+
 export {}
