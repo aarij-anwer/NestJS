@@ -71,12 +71,12 @@ proclaim('ready?');
 proclaim('ready!', 3);
 
 
-//inferring return types
-function getRandomNumber(){
+//inferring return types and explicit return types
+function getRandomNumber() : number{
   return Math.random();
 }
 
 const myVar = getRandomNumber();
-
+console.log(myVar);
 
 export {}

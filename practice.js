@@ -52,3 +52,9 @@ function proclaim(status, repeat) {
 proclaim();
 proclaim('ready?');
 proclaim('ready!', 3);
+//inferring return types
+function getRandomNumber() {
+    return Math.random();
+}
+var myVar = getRandomNumber();
+console.log(myVar);
