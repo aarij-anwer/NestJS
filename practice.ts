@@ -109,6 +109,13 @@ let numbersMulti: number[][][] = [ [[1],[2,3]], [[7],bestNumbers] ];
 let favoriteCoordinates: [number, number, string, number, number, string] = [40, 43.2, 'N', 73, 59.8, 'W'];
 
 //Array Type Inference
+let dogTup: [string, string, string, string] = ['dog', 'brown fur', 'curly tail', 'sad eyes'];
+
+let myArr = dogTup.concat([]);
+console.log(myArr);
+
+myArr[50] = 'not a dog';
+console.log(myArr);
 
 
 
