@@ -104,4 +104,12 @@ let bestMealPlan: string[][] = [bestLunches, bestBreakfasts, ['baked potato', 'm
 let bestBooleansTwice: boolean[][] = [bestBooleans, bestBooleans];
 let numbersMulti: number[][][] = [ [[1],[2,3]], [[7],bestNumbers] ];
 
+//Tuples
+
+let favoriteCoordinates: [number, number, string, number, number, string] = [40, 43.2, 'N', 73, 59.8, 'W'];
+
+//Array Type Inference
+
+
+
 export {}
