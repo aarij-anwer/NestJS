@@ -99,12 +99,7 @@ function addPower(p) {
     return answer;
 }
 console.log(addPower(2, 3, 4));
-function performDanceMove(moveName, moveReps, hasFlair) {
-    console.log("I do the ".concat(moveName, " ").concat(moveReps, " times !"));
-    if (hasFlair) {
-        console.log("I do it with flair!");
-    }
-}
+// Array of Tuples
 var danceMoves = [
     ["chicken beak", 4, false],
     ["wing flap", 4, false],
@@ -115,6 +110,24 @@ var danceMoves = [
     ["tail feather shake", 4, true],
     ["clap", 4, true],
 ];
+//Spread syntax with Tuples
+function performDanceMove(moveName, moveReps, hasFlair) {
+    console.log("I do the ".concat(moveName, " ").concat(moveReps, " times !"));
+    if (hasFlair) {
+        console.log("I do it with flair!");
+    }
+}
 danceMoves.forEach(function (element) {
     performDanceMove.apply(void 0, element);
 });
+// Enums
+var Direction;
+(function (Direction) {
+    Direction[Direction["North"] = 0] = "North";
+    Direction[Direction["South"] = 1] = "South";
+    Direction[Direction["East"] = 2] = "East";
+    Direction[Direction["West"] = 3] = "West";
+})(Direction || (Direction = {}));
+;
+var whichWayToArcticOcean;
+whichWayToArcticOcean = Direction.North; // No type error.

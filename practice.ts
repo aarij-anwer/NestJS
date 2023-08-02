@@ -128,7 +128,19 @@ function addPower(p:number, ...numsToAdd:number[]):number{
 
 console.log(addPower(2, 3, 4));
 
-//Spread syntax
+// Array of Tuples
+let danceMoves: [string, number, boolean][] = [
+  ["chicken beak", 4, false],
+  ["wing flap", 4, false],
+  ["tail feather shake", 4, false],
+  ["clap", 4, false],
+  ["chicken beak", 4, true],
+  ["wing flap", 4, true],
+  ["tail feather shake", 4, true],
+  ["clap", 4, true],
+];
+
+//Spread syntax with Tuples
 
 function performDanceMove(
   moveName: string,
@@ -141,19 +153,22 @@ function performDanceMove(
   }
 }
 
-let danceMoves: [string, number, boolean][] = [
-  ["chicken beak", 4, false],
-  ["wing flap", 4, false],
-  ["tail feather shake", 4, false],
-  ["clap", 4, false],
-  ["chicken beak", 4, true],
-  ["wing flap", 4, true],
-  ["tail feather shake", 4, true],
-  ["clap", 4, true],
-];
-
 danceMoves.forEach((element) => {
   performDanceMove(...element);
 })
+
+// Enums
+
+enum Direction {
+  North,
+  South,
+  East,
+  West
+};
+
+let whichWayToArcticOcean: Direction;
+whichWayToArcticOcean = Direction.North; // No type error.
+// whichWayToArcticOcean = Direction.Southeast; // Type error: Southeast is not a valid value for the Direction enum.
+// whichWayToArcticOcean = West; // Wrong syntax, we must use Direction.West instead. 
 
 export {}
