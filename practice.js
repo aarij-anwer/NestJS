@@ -131,3 +131,31 @@ var Direction;
 ;
 var whichWayToArcticOcean;
 whichWayToArcticOcean = Direction.North; // No type error.
+// whichWayToArcticOcean = Direction.Southeast; // Type error: Southeast is not a valid value for the Direction enum.
+// whichWayToArcticOcean = West; // Wrong syntax, we must use Direction.West instead. 
+// With and without Enums
+var petOnSale = 'chinchilla';
+var ordersArray = [
+    ['rat', 2],
+    ['chinchilla', 1],
+    ['hamster', 2],
+    ['chinchilla', 50]
+];
+// Write your code below:
+var Pet;
+(function (Pet) {
+    Pet[Pet["Hamster"] = 0] = "Hamster";
+    Pet[Pet["Rat"] = 1] = "Rat";
+    Pet[Pet["Chinchilla"] = 2] = "Chinchilla";
+    Pet[Pet["Tarantula"] = 3] = "Tarantula";
+})(Pet || (Pet = {}));
+var petOnSaleTS = Pet.Chinchilla;
+var ordersArrayTS = [
+    [Pet.Rat, 2],
+    [Pet.Chinchilla, 1],
+    [Pet.Hamster, 2],
+    [Pet.Chinchilla, 50]
+];
+console.log("Pet", Pet);
+console.log("petOnSaleTS", petOnSaleTS);
+console.log("ordersArrayTS", ordersArrayTS);

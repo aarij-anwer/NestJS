@@ -171,4 +171,36 @@ whichWayToArcticOcean = Direction.North; // No type error.
 // whichWayToArcticOcean = Direction.Southeast; // Type error: Southeast is not a valid value for the Direction enum.
 // whichWayToArcticOcean = West; // Wrong syntax, we must use Direction.West instead. 
 
+// With and without Enums
+
+let petOnSale = 'chinchilla';
+let ordersArray = [
+  ['rat', 2], 
+  ['chinchilla', 1], 
+  ['hamster', 2], 
+  ['chinchilla', 50]
+];
+
+// Write your code below:
+
+enum Pet {
+  Hamster,
+  Rat,
+  Chinchilla,
+  Tarantula
+}
+
+let petOnSaleTS: Pet = Pet.Chinchilla;
+
+let ordersArrayTS: [Pet, number][] = [
+  [Pet.Rat, 2],
+  [Pet.Chinchilla, 1],
+  [Pet.Hamster, 2],
+  [Pet.Chinchilla, 50]
+];
+
+console.log("Pet",Pet);
+console.log("petOnSaleTS", petOnSaleTS);
+console.log("ordersArrayTS", ordersArrayTS);
+
 export {}
