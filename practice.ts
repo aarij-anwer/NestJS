@@ -203,4 +203,28 @@ console.log("Pet",Pet);
 console.log("petOnSaleTS", petOnSaleTS);
 console.log("ordersArrayTS", ordersArrayTS);
 
+
+// String Enums
+
+petOnSale = 'chinchilla';
+ordersArray = [
+  ['rat', 2], 
+  ['chinchilla', 1], 
+  ['hamster', 2], 
+  ['chinchilla', 50]
+];
+
+// Write your code below:
+enum Pet2 {Hamster = 'HAMSTER', Rat = 'RAT', Chinchilla = 'CHINCHILLA', Tarantula = 'TARANTULA'};
+
+let petOnSaleTS2: Pet2 = Pet2.Chinchilla;
+
+let ordersArrayTS2: [Pet2, number][] = [
+  [Pet2.Rat, 2],
+  [Pet2.Chinchilla, 1],
+  [Pet2.Hamster, 2],
+  [Pet2.Chinchilla, 50]
+];
+
+
 export {}

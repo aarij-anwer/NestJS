@@ -159,3 +159,27 @@ var ordersArrayTS = [
 console.log("Pet", Pet);
 console.log("petOnSaleTS", petOnSaleTS);
 console.log("ordersArrayTS", ordersArrayTS);
+// String Enums
+petOnSale = 'chinchilla';
+ordersArray = [
+    ['rat', 2],
+    ['chinchilla', 1],
+    ['hamster', 2],
+    ['chinchilla', 50]
+];
+// Write your code below:
+var Pet2;
+(function (Pet2) {
+    Pet2["Hamster"] = "HAMSTER";
+    Pet2["Rat"] = "RAT";
+    Pet2["Chinchilla"] = "CHINCHILLA";
+    Pet2["Tarantula"] = "TARANTULA";
+})(Pet2 || (Pet2 = {}));
+;
+var petOnSaleTS2 = Pet2.Chinchilla;
+var ordersArrayTS2 = [
+    [Pet2.Rat, 2],
+    [Pet2.Chinchilla, 1],
+    [Pet2.Hamster, 2],
+    [Pet2.Chinchilla, 50]
+];
